@@ -35,7 +35,7 @@ class Solution:
 
 
 class Solution2:
-    """Second approach. Now with complexity = O(3*N). Runtime beats 83.94% submissions"""
+    """Second approach. Now with complexity = O(N). Runtime beats 83.94% submissions"""
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         rez = [None for i in range(len(nums))]
         for elem in nums:
@@ -46,7 +46,7 @@ class Solution2:
 class Solution3:
     """
     Third approach with no additional memory used.
-    I guess complexity O(2*N), but runtime worser than before: 53.95%
+    I guess complexity O(N), but runtime worser than before: 53.95%
     """
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         for i in range(len(nums)):
